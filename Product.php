@@ -15,7 +15,11 @@ class Product {
   public function getDesc() {
     return $this->desc;
   }
-
+  
+  private function validatePrice($price) {
+    return $price < 0 ? false : true;
+  }
+  
 }
 
 ?>
